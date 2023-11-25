@@ -5,7 +5,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN echo 'root:pkwok' | chpassed
+RUN echo 'root:pkwok' | chpasswd
 
 EXPOSE 22
 
